@@ -1,0 +1,63 @@
+/* src/app/app.component.css */
+
+/* Center the main content */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+h1, h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #0056b3; /* Blue color for the challenge section */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Removes the double border look */
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+
+/* Table Headers */
+thead th {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+}
+
+/* Table Cells */
+tbody td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+/* Zebra Striping (Alternating row colors) */
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+  background-color: #e2e6ea;
+  cursor: default;
+}
+
+/* Separator Line */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 2rem 0;
+}
