@@ -1,0 +1,60 @@
+/* Navigation Bar Container */
+.navbar {
+  background-color: #2c3e50; /* Dark Slate Blue - Professional */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Pushes Brand to left, Links to right */
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  position: sticky; /* Keeps nav at top when scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Brand Name (Logo area) */
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ecf0f1; /* Off-white */
+  cursor: default;
+}
+
+/* Links Container */
+.links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+/* Individual Links */
+.links a {
+  color: #bdc3c7; /* Light Grey (Inactive) */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Smooth transition for hover/active */
+  padding-bottom: 5px; /* Space for the border underline */
+  border-bottom: 2px solid transparent; /* Invisible border prevents jumping */
+}
+
+/* Hover State */
+.links a:hover {
+  color: #fff; /* White on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active State (When you are on that page) */
+.links a.active {
+  color: #fff;
+  border-bottom: 2px solid #3498db; /* Bright Blue underline */
+}
+
+/* Main Layout Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the content */
+  padding: 2rem; /* Spacing inside */
+  background-color: #f8f9fa; /* Light grey background for the page body */
+  min-height: 90vh; /* Ensures it covers most of the screen */
+}

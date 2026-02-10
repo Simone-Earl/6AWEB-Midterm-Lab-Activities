@@ -1,0 +1,36 @@
+/* Container spacing (optional, if not handled by global styles) */
+:host {
+  display: block;
+  text-align: center; /* Centers everything */
+  padding: 2rem;
+}
+
+/* Main Heading - Matches the Navbar Blue */
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Description Text */
+p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 2rem auto; /* Centers the block horizontally */
+}
+
+/* Date & Time "Badge" Style */
+p:last-of-type {
+  background-color: #eaf2f8; /* Very light blue background */
+  color: #2980b9; /* Strong blue text */
+  padding: 12px 24px;
+  border-radius: 30px; /* Pill shape */
+  border: 1px solid #a9cce3;
+  display: inline-block; /* Makes the box wrap the text */
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}

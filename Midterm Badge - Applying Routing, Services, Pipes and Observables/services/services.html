@@ -1,0 +1,26 @@
+<h2>Service Requests</h2>
+
+<input 
+  type="text"
+  [formControl]="searchControl" 
+  placeholder="Search by title or body..." 
+>
+
+<div *ngIf="filteredPosts$ | async as posts; else loading">
+  <p class="count">Showing {{ posts.length }} records</p>
+  
+  <div class="service-item" *ngFor="let post of posts">
+    
+    <strong class="id-badge">#{{ post.id }}</strong>
+    
+    <span class="service-title">{{ post.title | truncate:30 }}</span>
+    
+    <p>{{ post.body | truncate:100 }}</p>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="loading">
+    <p>Loading services...</p>
+  </div>
+</ng-template>

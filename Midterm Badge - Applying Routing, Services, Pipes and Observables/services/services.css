@@ -1,0 +1,81 @@
+/* Page Header */
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Search Input Styling */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px; /* Rounded corners */
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+/* Search Input Focus State */
+input[type="text"]:focus {
+  border-color: #3498db; /* Blue border when typing */
+  outline: none;
+}
+
+/* Records Count Text */
+p.count {
+  font-weight: bold;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+/* Individual Service Item Card */
+.service-item {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02); /* Very subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover Effect for Items */
+.service-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #3498db; /* Blue accent on hover */
+}
+
+/* ID Styling (#1, #2...) */
+.id-badge {
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-right: 10px;
+}
+
+/* Title Styling */
+.service-title {
+  color: #2980b9;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Body Text */
+.service-item p {
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Loading State */
+.loading {
+  font-style: italic;
+  color: #95a5a6;
+  text-align: center;
+  margin-top: 2rem;
+}

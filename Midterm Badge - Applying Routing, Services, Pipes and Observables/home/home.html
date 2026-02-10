@@ -1,0 +1,15 @@
+<h1>Welcome to the Community Help Desk</h1>
+<p>Connecting you to the latest updates.</p>
+
+<h3>Latest Updates (Top 5)</h3>
+
+<div *ngIf="posts$ | async as posts; else loading">
+  <div class="card" *ngFor="let post of posts | slice:0:5">
+    <h4>{{ post.title | uppercase }}</h4>
+    <p>{{ post.body }}</p>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p>Loading updates...</p>
+</ng-template>
